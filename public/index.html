@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZeroDay Alliance SNU</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #cccccc;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #0f0f0f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <script type="module" defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        const baseUri = "https://zeroday-alliance.pages.dev";
+        const path = window.location.pathname;
+        const redirectUri = `${baseUri}${path}`;
+        setTimeout(() => {
+          window.location.href = redirectUri;
+        }, 420);
+      });
+    </script>
+  </body>
+</html>
