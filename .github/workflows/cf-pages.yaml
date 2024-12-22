@@ -23,14 +23,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Publish #1
-        uses: cloudflare/pages-action@1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectName: zerodayalliance
-          directory: public
+      # - name: Publish #1
+      #   uses: cloudflare/pages-action@1
+      #   with:
+      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      #     projectName: zerodayalliance
+      #     directory: public
 
       - name: Publish #2
         uses: cloudflare/pages-action@1
