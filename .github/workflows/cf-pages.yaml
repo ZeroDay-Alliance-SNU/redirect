@@ -50,11 +50,11 @@ jobs:
           projectName: zeroday-alliance-snu
           directory: public
 
-      # - name: Publish #4
-      #   uses: cloudflare/pages-action@1
-      #   with:
-      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      #     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      #     projectName: zeroday-alliance
-      #     directory: public
+      - name: Publish #4
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: zeroday-alliance
+          directory: public
